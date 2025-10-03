@@ -13,7 +13,7 @@ function App() {
     <div className="min-h-screen flex flex-col gap-4">
       <Header />
       <main className="flex-1">
-        <div className="max-w-5xl m-auto">
+        <div className="container max-w-5xl m-auto px-4 md:px-0">
           <TodoForm />
           <TodoTable />
         </div>

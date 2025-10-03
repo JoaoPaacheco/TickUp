@@ -46,6 +46,7 @@ export const TodoTable = () => {
       accessorKey: 'id',
       header: 'ID',
       size: 250,
+      meta: { className: 'hidden md:table-cell' },
       cell: ({ getValue }) => (
         <span className="text-xs text-muted-foreground">
           {getValue<string>()}
@@ -62,6 +63,7 @@ export const TodoTable = () => {
       id: 'status',
       header: 'Status',
       size: 120,
+      meta: { className: 'hidden md:table-cell' },
       cell: ({ row }) => {
         const completed = row.original.completed
         return (
